@@ -1,0 +1,55 @@
+/* Frontend Assets */
+@import "@frontend-assets/scss/tailwind.scss";
+@import "@frontend-assets/libs/@mdi/font/css/materialdesignicons.min.css";
+@import "@frontend-assets/libs/@iconscout/unicons/css/line.css";
+
+/**
+* @@
+* this is for temporary switcher :: need to be removed later
+*/
+
+/* override VueForm Css */
+:root, :before, :after, * {
+    --vf-primary: #00423a !important;
+}
+/* end of override VueForm Css */
+
+
+:root {
+    --color-green-600: #00423a; /* Default green color */
+    --color-yellow-600: #ffd400; /* Default yellow color */
+
+  }
+
+  .bg-green-600 {
+    background-color: var(--color-green-600);
+  }
+
+  .bg-yellow-600 {
+    background-color: var(--color-yellow-600);
+  }
+
+  .text-green-600 {
+    color: var(--color-green-600);
+  }
+
+  @layer utilities {
+
+    .bg-green-600\/5 {
+        background-color: rgba(0, 66, 58, 0.9); /* Green color with 90% opacity */
+      }
+
+    .bg-green-600\/30 {
+    background-color: rgba(0, 66, 58, 0.9); /* Green color with 90% opacity */
+    }
+
+    .bg-green-600\/60 {
+      background-color: rgba(0, 66, 58, 0.9); /* Green color with 90% opacity */
+    }
+
+    .bg-green-600\/90 {
+        background-color: rgba(0, 66, 58, 0.9); /* Green color with 90% opacity */
+      }
+  }
+
+

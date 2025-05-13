@@ -1,0 +1,11 @@
+{
+    "name": "Shortlist",
+    "alias": "shortlist",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\Shortlist\\Providers\\ShortlistServiceProvider"
+    ],
+    "files": []
+}

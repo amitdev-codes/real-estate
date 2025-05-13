@@ -1,0 +1,35 @@
+@use "sass:meta";
+/* Template Name: Hously - Vue Js Real Estate Landing & Admin Dashboard Template
+   Author: Shreethemes
+   Email: support@shreethemes.in
+   Website: https://shreethemes.in
+   Version: 2.1.0
+   Created: June 2022
+   File: Main Css File
+*/
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+// FONTS
+@include meta.load-css("custom/fonts");
+
+// general
+@include meta.load-css("custom/general");
+
+// components
+@include meta.load-css("components/buttons");
+
+// structure
+@include meta.load-css("custom/structure/topnav");
+@include meta.load-css("custom/structure/footer");
+
+// pages
+@include meta.load-css("custom/pages/helper");
+@include meta.load-css("custom/pages/hero");
+@include meta.load-css("custom/pages/testi");
+@include meta.load-css("custom/pages/choices");
+@include meta.load-css("custom/pages/countdown");
+@include meta.load-css("custom/pages/swiper-slider");
+@include meta.load-css("custom/pages/contact");

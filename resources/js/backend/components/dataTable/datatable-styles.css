@@ -1,0 +1,220 @@
+/* Enhanced table styles */
+.material-icons {
+    font-family: "Material Icons";
+    font-size: 20px;
+}
+.dataTables_wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Responsive horizontal scroll */
+.overflow-x-auto {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+}
+
+/* Custom scrollbar for webkit browsers */
+.overflow-x-auto::-webkit-scrollbar {
+    height: 8px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 4px;
+}
+
+.overflow-x-auto::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.custom-select2.select2-container {
+    width: 100% !important;
+}
+.full-width-select {
+    width: 100% !important;
+}
+
+.full-width-select .select2-container {
+    width: 100% !important;
+}
+
+.full-width-select .select2-selection {
+    width: 100% !important;
+    height: 42px !important;
+    border: 1px solid #d1d5db !important;
+    /* border-radius: 0.5rem !important; */
+    border-radius: 0 !important;
+    padding: 0.5rem !important;
+    font-size:  12px !important;
+}
+
+.full-width-select .select2-selection__rendered {
+    line-height: 28px !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+}
+
+.full-width-select .select2-selection__arrow {
+    height: 36px !important;
+    right: 10px !important;
+}
+
+/* Dark mode adjustments */
+.dark .full-width-select .select2-selection {
+    background-color: #374151 !important;
+    border-color: #4b5563 !important;
+    color: #d1d5db !important;
+}
+
+.dark .full-width-select .select2-selection__rendered {
+    color: #d1d5db !important;
+}
+
+.full-width-select.select2-container--open .select2-selection {
+    border-color: #10b981 !important; /* Green focus color */
+    outline: none !important;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3) !important;
+}
+
+
+/* //pagination deeifgbns */
+div.dt-container .dt-paging .dt-paging-button {
+    padding: 0.25rem 0.75rem; /* Small padding (px-3 py-1) */
+    background-color: #045321e8; /* Green background (bg-green-600) */
+    border: 1px solid #16a34a; /* Green border (border-green-600) */
+    color: white; /* White text (text-white) */
+    border-radius: 0 !important;
+    transition: background-color 0.3s, border-color 0.3s; /* Smooth transition */
+    margin: 0 0.25rem; /* Optional: add spacing between buttons */
+}
+
+/* Hover effect for all buttons, including page numbers */
+div.dt-container .dt-paging .dt-paging-button:hover {
+    background-color: #f59e0b !important; /* Yellow background on hover */
+    border-color: #f59e0b !important; /* Yellow border on hover */
+    color: white !important; /* Keep text white */
+    /* Use gradient only if needed, else keep solid color */
+    background: none; /* Remove gradient */
+}
+
+/* Styling for current page button */
+div.dt-container .dt-paging .dt-paging-button.current {
+    background-color: gray; /* Green background for current */
+    border: 1px solid #16a34a; /* Green border for current */
+    color: white !important; /* White text for current */
+}
+
+/* Hover effect for the current page button */
+div.dt-container .dt-paging .dt-paging-button.current:hover {
+    background-color: #f59e0b !important; /* Yellow background on hover */
+    border-color: #f59e0b !important; /* Yellow border on hover */
+}
+
+/* Styling for next and last buttons */
+div.dt-container .dt-paging .dt-paging-button.next,
+div.dt-container .dt-paging .dt-paging-button.last {
+    background-color: #16a34a; /* Green background for next/last */
+    border: 1px solid #16a34a; /* Green border for next/last */
+    color: white !important; /* White text for next/last */
+}
+
+/* Hover effect for next and last buttons */
+div.dt-container .dt-paging .dt-paging-button.next:hover,
+div.dt-container .dt-paging .dt-paging-button.last:hover {
+    background-color: #f59e0b !important; /* Yellow background on hover */
+    border-color: #f59e0b !important; /* Yellow border on hover */
+}
+
+/* Styling for numbered page buttons */
+div.dt-container .dt-paging .dt-paging-button:not(.current) {
+    background-color: #16a34a; /* Green background for all page number buttons */
+    border: 1px solid #16a34a; /* Green border for page numbers */
+    color: white !important; /* White text for page numbers */
+}
+
+/* Hover effect for numbered page buttons */
+div.dt-container .dt-paging .dt-paging-button:not(.current):hover {
+    background-color: #f59e0b !important; /* Yellow background on hover */
+    border-color: #f59e0b !important; /* Yellow border on hover */
+    color: white !important; /* Keep text white */
+}
+
+/* Focus state removal for all buttons */
+div.dt-container .dt-paging .dt-paging-button:focus {
+    outline: none;
+}
+
+/* Styling for disabled buttons (e.g., first, previous, next, last when not active) */
+div.dt-container .dt-paging .dt-paging-button.disabled {
+    background-color: #d1d5db; /* Light grey background for disabled buttons */
+    border: 1px solid #d1d5db; /* Light grey border for disabled */
+    color: #6b7280; /* Grey text for disabled */
+    cursor: not-allowed; /* Change cursor to indicate disabled state */
+}
+
+/* Optional: Styling for pagination container for spacing */
+div.dt-container .dt-paging {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* search */
+.dt-input {
+    padding: 0.5rem 1rem; /* Padding equivalent to px-4 py-2 */
+    font-size: 0.875rem; /* Text size equivalent to text-sm */
+    border: 1px solid #d1d5db; /* Default border */
+    /* border-radius: 0.5rem; Rounded corners Removed for UI */
+    border-radius: 0 !important;
+    outline: none; /* Remove default outline */
+    color: #4b5563; /* Text color equivalent to text-gray-600 */
+    font-weight: 300; /* Font light */
+    background-color: #ffffff; /* White background */
+    transition: box-shadow 0.2s, border-color 0.2s; /* Smooth focus effects */
+}
+
+.dt-input:focus {
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3); /* Green focus ring */
+    border-color: #10b981; /* Green border */
+}
+
+.dark .dt-input {
+    background-color: #374151; /* Dark background */
+    color: #e5e7eb; /* Text color equivalent to dark:text-gray-200 */
+    border-color: #4b5563; /* Border equivalent to dark:border-gray-600 */
+}
+
+.dark .dt-input:focus {
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.3); /* Green focus ring */
+    border-color: #10b981; /* Green border */
+}
+
+/* Conditional Error Styling */
+.dt-input.error {
+    border-color: #ef4444; /* Red border for error (equivalent to border-red-500) */
+}
+
+.dt-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.container-fluid {
+    width: 100%;
+}
+
+@media (min-width: 1280px) {
+    .container-fluid {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+}

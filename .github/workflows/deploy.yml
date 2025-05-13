@@ -1,0 +1,57 @@
+name: 🚀 Deploy
+
+on:
+  push:
+    branches:
+      - dev
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+
+      - name: 🛠️ Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.BLUEHOST_SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.BLUEHOST_HOST }} >> ~/.ssh/known_hosts
+
+      - name: 🛠️ Start SSH agent, clean up, and add key
+        run: |
+          # Start the SSH agent
+          eval $(ssh-agent -s)
+          echo "SSH agent started"
+          echo "SSH_AUTH_SOCK=${SSH_AUTH_SOCK} , Agent added and started ✅"
+
+          # Clean up SSH agent and add the specific key
+          ssh-add -D  # Remove all keys from the agent
+          ssh-add ~/.ssh/id_rsa  # Add only the specific key
+          ssh-add -l  # List of added keys
+
+          # Debug the SSH agent
+          if [ -n "$SSH_AUTH_SOCK" ]; then
+            ls -l ${SSH_AUTH_SOCK}
+            ssh-add -l || echo "No keys loaded ❌"
+          else
+            echo "SSH agent socket not found. SSH agent might not be running. ❌"
+          fi
+
+      - name: 🛠️ Check SSH agent process
+        run: |
+          ps aux | grep ssh-agent
+
+      - name: 👨‍🚀 Deploy to server
+        run: |
+          ssh -vvv \
+              -i ~/.ssh/id_rsa \
+              -o IdentitiesOnly=yes \
+              -o KexAlgorithms=+diffie-hellman-group-exchange-sha256 \
+              -p ${{ secrets.BLUEHOST_PORT }} \
+              ${{ secrets.BLUEHOST_USER }}@${{ secrets.BLUEHOST_HOST }} \
+              "bash ~/public_html/website_436cef92/.scripts/deploy.sh"
+

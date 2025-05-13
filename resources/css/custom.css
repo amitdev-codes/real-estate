@@ -1,0 +1,73 @@
+/**
+* @@
+* Custom Fonts Loaded :)
+*/
+
+/* @font-face {
+    font-family: 'LoraRegular';
+    src: url('/new-fonts/Lora-Regular.woff2') format('woff2'),
+         url('/new-fonts/Lora-Regular.woff') format('woff'),
+         url('/new-fonts/Lora-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MontserratThin';
+    src: url('/new-fonts/Montserrat-Thin.woff2') format('woff2'),
+         url('/new-fonts/Montserrat-Thin.woff') format('woff'),
+         url('/new-fonts/Montserrat-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplayRegular';
+    src: url('/new-fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+         url('/new-fonts/PlayfairDisplay-Regular.woff') format('woff'),
+         url('/new-fonts/PlayfairDisplay-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PlayfairDisplaySCRegular';
+    src: url('/new-fonts/PlayfairDisplaySCRegular-Regular.woff2') format('woff2'),
+         url('/new-fonts/PlayfairDisplaySCRegular-Regular.woff') format('woff'),
+         url('/new-fonts/PlayfairDisplaySCRegular-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+
+@font-face {
+    font-family: 'PoppinsRegular';
+    src: url('@fonts/Poppins-Regular.woff2') format('woff2'),
+         url('@fonts/Poppins-Regular.woff') format('woff'),
+         url('@fonts/Poppins-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PoppinsMedium';
+    src: url('@fonts/Poppins-Medium.woff2') format('woff2'),
+         url('@fonts/Poppins-Medium.woff') format('woff'),
+         url('@fonts/Poppins-Medium.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* @font-face {
+    font-family: 'RalewayThin';
+    src: url('/new-fonts/Raleway-Thin.woff2') format('woff2'),
+         url('/new-fonts/Raleway-Thin.woff') format('woff'),
+         url('/new-fonts/Raleway-Thin.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+} */
+@font-face {
+    font-family: 'LegueSpartanRegular';
+    src: url('/new-fonts/LeagueSpartan-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
