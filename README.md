@@ -21,6 +21,24 @@ Powered by Laravel, Vue.js, MySQL, and Google Maps / Places APIs.
 AusProperty is a modern real estate platform developed for an Australian property company. It enables users to browse, search, and explore property listings with an interactive map-driven experience powered by Google APIs. Agents can manage listings through a secure admin panel, and buyers can filter properties by suburb, price range, property type, and more.
 
 ---
+## 📸 Screenshots
+
+### 🏠 Home Page
+<img width="1824" height="965" alt="Screenshot from 2026-03-28 10-29-56" src="https://github.com/user-attachments/assets/f38ca2bb-e04c-4b03-be91-e74fa31014c2" />
+
+### 🗺️ Map-Based Property Search
+![Map Search](screenshots/map-search.png)
+<img width="1824" height="965" alt="Screenshot from 2026-03-28 10-30-08" src="https://github.com/user-attachments/assets/7bde70ca-8285-47a7-932b-b551bbedc54a" />
+
+
+### 🏡 Property Listing Detail
+![Listing Detail](screenshots/listing-detail.png)
+
+### 👤 Agent Dashboard
+![Agent Dashboard](screenshots/agent-dashboard.png)
+<img width="1824" height="965" alt="Screenshot from 2026-03-28 10-33-46" src="https://github.com/user-attachments/assets/364c9e27-3f58-4997-9679-3830507a70e0" /><img width="1824" height="965" alt="Screenshot from 2026-03-28 10-33-50" src="https://github.com/user-attachments/assets/1b615301-1c66-41d6-a506-f43840402ff2" />
+<img width="1824" height="965" alt="Screenshot from 2026-03-28 10-34-12" src="https://github.com/user-attachments/assets/2d040765-56d4-4c8f-bc49-e67c579efec8" />
+
 
 ## ✨ Features
 
